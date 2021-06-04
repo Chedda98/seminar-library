@@ -4,5 +4,5 @@ export interface IReservation {
   _id: mongoose.Types.ObjectId;
   roomType: string;
   roomNumber: number;
-  reservationNow: boolean;
+  reservationNow: Array<boolean>;
 }
