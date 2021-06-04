@@ -17,7 +17,7 @@ const ReservationSchema = new mongoose.Schema({
   },
 
   reservationNow:{
-    type: [Boolean],
+    type: Boolean,
     default: false,
   },
 });
