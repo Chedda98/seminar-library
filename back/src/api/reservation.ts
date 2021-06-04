@@ -10,6 +10,11 @@ router.get("/studio", async (req, res) => {
       roomType: "Studio"
     });
     res.json(reservations);
+
+    if (!reservations) {
+      return res.status(400).json({ msg: "Null value" });
+    }
+
   } catch (error) {
     console.error(error.message);
     res.status(500).send("Server Error");
@@ -22,6 +27,11 @@ router.get("/seminar", async (req, res) => {
       roomType: "Seminar"
     });
     res.json(reservations);
+
+    if (!reservations) {
+      return res.status(400).json({ msg: "Null value" });
+    }
+    
   } catch (error) {
     console.error(error.message);
     res.status(500).send("Server Error");
