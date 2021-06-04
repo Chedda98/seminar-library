@@ -1,1 +1,1 @@
-# soptConnector
+# 웹-서 합동세미나 자료
