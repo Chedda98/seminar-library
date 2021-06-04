@@ -12,6 +12,7 @@ app.use("/api/users", require("./api/users"));
 app.use("/api/profile", require("./api/profile"));
 app.use("/api/auth", require("./api/auth"));
 app.use("/api/posts", require("./api/post"));
+app.use("/api/reservation", require("./api/reservation"));
 
 // error handler
 app.use(function (err, req, res, next) {
